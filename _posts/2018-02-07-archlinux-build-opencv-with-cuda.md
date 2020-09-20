@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "在ArchLinux下编译Cuda+OpenCV"
-categories: [ArchLinux,OpenCV]
+categories: [Linux, OpenCV, Cuda]
 ---
 
 写这篇文章主要是为了避免以后要编译新的版本的OpenCV或Cuda的时候忘记了这次遇到的坑

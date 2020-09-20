@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Numerically stable exp and log of SE3"
-categories: []
+categories: [Lie Group, Lie Algebra, Linear Algebra]
 ---
 
 In the problem of SLAM, the pose of the camera is described as $\boldsymbol{\delta} = (\boldsymbol{\omega}, \boldsymbol{\upsilon}) \in \mathfrak{se}(3)$, with $\boldsymbol{\omega} = \theta \boldsymbol{u}$ as the 3-d angle-axis rotation vector, and $\boldsymbol{\upsilon}$ as the 3-d translation vector.
