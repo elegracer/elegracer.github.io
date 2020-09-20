@@ -75,7 +75,7 @@ For convenience, we denote $(\boldsymbol{\omega \ \upsilon})^T \in \mathfrak{se}
 
 # Numerically Stable Mapping
 
-## $\mathrm{SO}(3)$ as ratation matrix
+## $\mathrm{SO}(3)$ as rotation matrix
 
 ### $\mathrm{SE}(3)$ Exponential Map
 
