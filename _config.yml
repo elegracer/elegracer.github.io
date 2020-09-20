@@ -5,7 +5,7 @@ title: Elegracer
 description: a blog
 keywords: Elegracer
 author: Elegracer
-footerText: 'have fun'
+footerText: 'Be Rational'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
