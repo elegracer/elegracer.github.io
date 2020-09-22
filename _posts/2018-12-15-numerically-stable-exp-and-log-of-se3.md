@@ -194,7 +194,6 @@ We compute $\boldsymbol{V}$, and compute $\boldsymbol t = \boldsymbol V \cdot \b
 
 ### $\mathrm{SE}(3)$ Logarithm Map
 
-
 $$
 \theta = 2 \arctan({\|\boldsymbol{q}_v\|/ q_w}) \\
 \boldsymbol{u} = \boldsymbol{q}_v/\|\boldsymbol{q}_v\|
@@ -226,11 +225,7 @@ $$
 
 And $\boldsymbol \upsilon = \boldsymbol V^{-1} \cdot \boldsymbol t$.
 
-
-
 > This article will be continued later
-
-
 
 # References
 
