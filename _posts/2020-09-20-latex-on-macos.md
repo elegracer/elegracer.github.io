@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在macOS下优雅地使用LaTeX"
+title: "在macOS下优雅地使用$\\LaTeX$"
 categories: [LaTeX]
 ---
 
