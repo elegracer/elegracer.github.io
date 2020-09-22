@@ -202,3 +202,7 @@ input:-webkit-autofill {
     font-size: 15px;
   }
 }
+/* KaTeX related */
+.newline {
+  height: 0.5em;
+}
