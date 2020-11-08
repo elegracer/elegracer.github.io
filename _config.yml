@@ -27,6 +27,8 @@ menu:
     url: /
   - title: 归类
     url: /pages/categories.html
+  - title: 工具
+    url: /pages/tools.html
   - title: 搜索
     url: /pages/search.html
   - title: 友链
@@ -61,3 +63,8 @@ links:
     url: http://bjlkeng.github.io/
   - title: Codinfox
     url: https://codinfox.github.io/blog/categories/
+
+# 工具
+tools:
+  - title: Trajectory Visualization
+    url: /pages/trajvis.html
