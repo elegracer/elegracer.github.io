@@ -1,26 +1,31 @@
 <!-- MathJax数学公式支持 -->
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-<script defer src="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-<script defer src="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/katex.min.js"
+    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    crossorigin="anonymous"></script>
+<script defer src="//cdnjs.loli.net/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js"
+    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+    crossorigin="anonymous"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         function stripcdata(x) {
             if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
-            return x.substring(11, x.length - 4);
+                return x.substring(11, x.length - 4);
             return x;
         }
-        document.querySelectorAll("script[type='math/tex']").forEach(function(el){
+        document.querySelectorAll("script[type='math/tex']").forEach(function (el) {
             el.outerHTML = "\\(" + stripcdata(el.textContent) + "\\)";
         });
-        document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function(el){
+        document.querySelectorAll("script[type='math/tex; mode=display']").forEach(function (el) {
             el.outerHTML = "\\[" + stripcdata(el.textContent) + "\\]";
         });
         renderMathInElement(document.body, {
             delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "\\(", right: "\\)", display: false}
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\[", right: "\\]", display: true },
+                { left: "\\(", right: "\\)", display: false }
             ],
             output: "html"
         });

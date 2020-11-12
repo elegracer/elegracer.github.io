@@ -61,5 +61,6 @@ title: 轨迹可视化
 </div>
 
 <button onclick="toTop()" id="to_top" title="Go to top">Top</button>
+
 <script src="//cdnjs.loli.net/ajax/libs/plotly.js/1.57.1/plotly.min.js"></script>
 <script src="{{site.baseurl}}/static/js/trajvis.js"></script>

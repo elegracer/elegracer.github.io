@@ -5,36 +5,47 @@ title: Elegracer
 description: a blog
 keywords: Elegracer
 author: Elegracer
-footerText: 'Be Rational'
+footerText: "Be Rational"
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
 kramdown:
-  # smart_quotes: apos,apos,quot,quot
-  auto_ids: true
-  input: GFM
-  syntax_highlighter: rouge
-exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'cli.bat', 'dist.tar.gz']
+    # smart_quotes: apos,apos,quot,quot
+    auto_ids: true
+    input: GFM
+    syntax_highlighter: rouge
+exclude:
+    [
+        "CNAME",
+        "README.md",
+        "LICENSE",
+        "_site",
+        "dist",
+        "Gemfile",
+        "Gemfile.lock",
+        "cli.bat",
+        "dist.tar.gz",
+    ]
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
-domainUrl: 'https://elegracer.com'
-baseurl: ''
+domainUrl: "https://elegracer.com"
+baseurl: ""
 
 # 菜单
 menu:
-  - title: 首页
-    url: /
-  - title: 归类
-    url: /pages/categories.html
-  - title: 工具
-    url: /pages/tools.html
-  - title: 搜索
-    url: /pages/search.html
-  - title: 友链
-    url: /pages/links.html
-  - title: 关于
-    url: /pages/about.html
+    - title: 首页
+      url: /
+    - title: 归类
+      url: /pages/categories.html
+    - title: 工具
+      url: /pages/tools.html
+    - title: 搜索
+      url: /pages/search.html
+    - title: 友链
+      url: /pages/links.html
+    - title: 关于
+      url: /pages/about.html
 
 # 点击页面文字冒出特效,不需要请设置为false
 extClickEffect: false
@@ -55,16 +66,16 @@ extMath: true
 
 # 友情链接
 links:
-  - title: Fan's Farm
-    url: https://fzheng.me/
-  - title: Epipolar
-    url: https://itsuhane.github.io/
-  - title: Bounded Rationality
-    url: http://bjlkeng.github.io/
-  - title: Codinfox
-    url: https://codinfox.github.io/blog/categories/
+    - title: Fan's Farm
+      url: https://fzheng.me/
+    - title: Epipolar
+      url: https://itsuhane.github.io/
+    - title: Bounded Rationality
+      url: http://bjlkeng.github.io/
+    - title: Codinfox
+      url: https://codinfox.github.io/blog/categories/
 
 # 工具
 tools:
-  - title: Trajectory Visualization
-    url: /pages/trajvis.html
+    - title: Trajectory Visualization
+      url: /pages/trajvis.html
