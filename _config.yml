@@ -38,6 +38,8 @@ menu:
       url: /
     - title: 归类
       url: /pages/categories.html
+    - title: 笔记
+      url: https://www.notion.so/Shared-Notes-947c4ac779874aaf95e1d492daf0ba08
     - title: 工具
       url: /pages/tools.html
     - title: 搜索
