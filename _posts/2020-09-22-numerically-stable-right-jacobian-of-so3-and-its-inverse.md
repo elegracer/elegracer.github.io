@@ -35,3 +35,10 @@ $$
 # References
 
 [^1]: J. Solà, “Quaternion kinematics for the error-state Kalman filter,” arXiv:1711.02508 [cs], Nov. 2017, Accessed: Nov. 17, 2019. [Online]. Available: http://arxiv.org/abs/1711.02508.
+
+# Links
+
+1. <https://en.wikipedia.org/wiki/Axis%E2%80%93angle_representation#Relationship_to_other_representations>
+2. <http://ethaneade.com/lie.pdf>
+3. <http://www.iri.upc.edu/people/jsola/JoanSola/objectes/notes/kinematics.pdf>
+4. <http://ethaneade.com/lie_groups.pdf>
