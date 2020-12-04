@@ -10,7 +10,7 @@ categories: [c++, singleton, inline, variable]
 
 看到的前人的做法，要么是像C一样，用`extern`来实现：
 
-```c++
+```cpp
 // config.h
 
 extern size_t MAX_BUFFER_BYTE_SIZE;
@@ -26,7 +26,7 @@ size_t MAX_BUFFER_BYTE_SIZE = 4096;
 
 比较C++的方法是使用C++11的`Meyer's singleton`：
 
-```c++
+```cpp
 // config.h
 
 static size_t& g_MAX_BUFFER_BYTE_SIZE() {
@@ -52,15 +52,13 @@ static size_t& MAX_BUFFER_BYTE_SIZE = g_MAX_BUFFER_BYTE_SIZE();
 事情就变得非常简单了：用`c++17`及以上标准编译并链接代码，然后把全局变量写在`.h`文件里，
 并且用`inline`修饰，包含这个`.h`文件，在这里写它，然后在另外的地方读它。
 
-```c++
+```cpp
 // config.h
 
 inline size_t MAX_BUFFER_BYTE_SIZE = 4096;
 
 void modify_and_print();
-```
 
-```c++
 // config.cpp
 
 #include "config.h"
@@ -72,7 +70,7 @@ void modify_and_print() {
 }
 ```
 
-```c++
+```cpp
 // main.cpp
 
 #include "config.h"
