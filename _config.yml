@@ -31,6 +31,7 @@ exclude:
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
 domainUrl: "https://elegracer.com"
 baseurl: ""
+githubUrl: "https://github.com/elegracer"
 
 # 菜单
 menu:
