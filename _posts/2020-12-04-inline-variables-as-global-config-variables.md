@@ -8,7 +8,7 @@ categories: [c++, singleton, inline, variable]
 
 我想找到一个优雅的办法来放一些全局配置变量。
 
-看到的前人的做法，要么是像C一样，用`extern`来实现：
+看到的前人的做法，要么是像 c 一样，用`extern`来实现：
 
 ```cpp
 // config.h
@@ -24,7 +24,7 @@ size_t MAX_BUFFER_BYTE_SIZE = 4096;
 
 而且貌似在某些情况下，这个东西可能会出错（具体我就不想细究了，可以看下面的参考资料）。
 
-比较C++的方法是使用C++11的`Meyer's singleton`：
+比较 c++ 的方法是使用 c++11 的`Meyer's singleton`：
 
 ```cpp
 // config.h
@@ -43,7 +43,7 @@ static size_t& MAX_BUFFER_BYTE_SIZE = g_MAX_BUFFER_BYTE_SIZE();
 
 # c++17 inline variable
 
-在c++17，变量可以用`inline`修饰，并且链接器必须满足：不论多少个编译单元包含这个`.h`文件，
+在 c++17 中，变量可以用`inline`修饰，并且链接器必须满足：不论多少个编译单元包含这个`.h`文件，
 在这个`.h`里声明的`inline`变量只能有一个实例。
 
 也就是说所有编译单元中的这个变量都指向同一块内存，在一个`.cpp`里改了这个变量的值，
