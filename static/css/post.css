@@ -87,6 +87,10 @@
     margin: 0 4px;
     line-height: 1;
 }
+.page-post img + em {
+    display: block;
+    text-align: center;
+}
 .page-post code {
     background-color: #eeeeee;
     word-break: break-all;
