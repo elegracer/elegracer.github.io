@@ -82,3 +82,5 @@ links:
 tools:
     - title: Trajectory Visualization
       url: /pages/trajvis.html
+    - title: Quaternion Visualization
+      url: /pages/quatvis.html
